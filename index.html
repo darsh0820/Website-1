@@ -1,111 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blur-Loading</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-<<<<<<< Updated upstream:Loading_Screen.html
-    <style>
-        body {
-            font-family: Ubuntu;
-            display: flex;
-            /* flex-direction: column; */
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            overflow: hidden;
-            margin: 0;
-        }
-
-        .bg {
-            background: url(/VSC/clouds.jpg) no-repeat center center/cover;
-            position: absolute;
-            top: -30px;
-            left: -30px;
-            width: 160vw;
-            height: 160vh;
-            z-index: -1;
-            filter: blur(0px);
-        }
-
-        .loading-text {
-            font-size: 40px;
-            color: rgb(60, 60, 60);
-            align: center;
-            display: block;
-        }
-        .bar{
-            height: 25px;
-            width: 400px;
-            border: 2px solid black;
-            border-radius: 5px;
-            display: block;
-        }
-        .loading-bar{
-            height: 25px;
-            /* width: 10px; */
-            background-color:rgb(60, 60, 60) ;
-            /* align:center */
-        }
-    </style>
-=======
     <link rel="stylesheet" href="style.css">
->>>>>>> Stashed changes:index.html
 </head>
-
 <body>
     <section class="bg"></section>
-<<<<<<< Updated upstream:Loading_Screen.html
+
     <div class="loading-text"></div>
     <div class="bar">
         <div class="loading-bar"></div>
     </div>
-    <script>
-        const loadText = document.querySelector('.loading-text')
-        const bg = document.querySelector('.bg')
-        const Bar = document.querySelector('.bar')
-        const loadBar = document.querySelector('.loading-bar')
-
-        let load = 0
-
-        let int = setInterval(blurring, 20)
-
-        function blurring() {
-            load++
-
-            if (load > 99) {
-                clearInterval(int)
-            }
-
-            //consle.log(load)
-            loadText.innerText = `Loading ${load}%`
-            loadText.style.opacity = scale(load, 0, 100, 1, 0)
-
-            Bar.style.opacity = scale(load, 0, 100, 1, 0)
-            loadBar.style.width = `${scale(load, 0, 100, 0, 400)}px`
-
-            bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
-        }
-
-        https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
-        function scale(number, inMin, inMax, outMin, outMax) {
-            return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
-        }
-    </script>
-=======
-    
-    <section>
-        <div class="loading-text"></div><br>
-        <div class="bar">
-            <div class="loading-bar"></div>
-        </div>
-    </section>
 
     <script src="script.js"></script>
->>>>>>> Stashed changes:index.html
 </body>
-
 </html>

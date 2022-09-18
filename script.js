@@ -15,7 +15,7 @@ const loadText = document.querySelector('.loading-text')
             }
 
             //consle.log(load)
-            loadText.innerText = `Loading ${load}% `
+            loadText.innerText = `Loading ${load}%`
             loadText.style.opacity = scale(load, 0, 100, 1, 0)
 
             Bar.style.opacity = scale(load, 0, 100, 1, 0)
