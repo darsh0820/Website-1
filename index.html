@@ -35,18 +35,21 @@
             font-size: 40px;
             color: rgb(60, 60, 60);
             display: block;
+            /* margin: auto; */
         }
-        .bar{
+
+        .bar {
             height: 25px;
             width: 400px;
             border: 2px solid black;
             border-radius: 5px;
             display: block;
         }
-        .loading-bar{
+
+        .loading-bar {
             height: 25px;
             /* width: 10px; */
-            background-color:rgb(40, 40, 40) ;
+            background-color: rgb(60, 60, 60);
             /* align:center */
         }
     </style>
@@ -54,13 +57,14 @@
 
 <body>
     <section class="bg"></section>
-    <nav>
-        
-    </nav>
-    <div class="loading-text"></div>
-    <div class="bar">
-        <div class="loading-bar"></div>
-    </div>
+    
+    <section>
+        <div class="loading-text"></div><br>
+        <div class="bar">
+            <div class="loading-bar"></div>
+        </div>
+    </section>
+
     <script>
         const loadText = document.querySelector('.loading-text')
         const bg = document.querySelector('.bg')
@@ -79,7 +83,7 @@
             }
 
             //consle.log(load)
-            loadText.innerText = `Loading ${load}%`
+            loadText.innerText = `Loading ${load}% `
             loadText.style.opacity = scale(load, 0, 100, 1, 0)
 
             Bar.style.opacity = scale(load, 0, 100, 1, 0)
