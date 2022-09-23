@@ -1,11 +1,5 @@
 body {
     font-family: Ubuntu;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    /* height: 100vh; */
-    /* overflow: hidden; */
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to bottom right, blue, lightblue);
@@ -17,18 +11,8 @@ section {
     min-height: 100vh;
     color: black;
 }
-*{
-    /* border: 2px solid black; */
-}
 
 .bg {
-    /* background: url(seashore.jpg) no-repeat center center/cover; */
-    /* position: absolute; */
-    /* top: -30px;
-    left: -30px;
-    width: 160vw;
-    height: 160vh; */
-    /* z-index: -1; */
     filter: blur(0px);
 }
 
@@ -39,7 +23,6 @@ section {
 }
 
 .barCol{
-    /* padding: 10px; */
     margin-top: 10px;
 }
 
