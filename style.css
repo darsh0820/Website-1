@@ -2,14 +2,71 @@ body {
     font-family: Ubuntu;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(to bottom right, blue, lightblue);
+    background-image: linear-gradient(to bottom right, darkblue, blue);
 }
+
+.navbar {
+    
+    border: 1px solid darkblue;
+}
+
+.navbar a {
+    float: center;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.navbar a i {
+    width: 30px;
+    border-radius: 20px;
+}
+
+.navbar li {
+    margin-left: 20px;
+    list-style: none;
+}
+
+.navbar a:active {
+    background: white;
+    color: black;
+    border-radius: 10px;
+}
+
+.navbar a:hover {
+    background-image: linear-gradient(to bottom right, blue, darkblue);
+    color: black;
+    border-radius: 10px;
+}
+
+.mt {
+    margin-top: 50px;
+}
+
 section {
     display: grid;
     place-items: center;
     align-content: center;
     min-height: 100vh;
-    color: black;
+    color: lightgray;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgb(19, 33, 33);
+}
+section p,h1{
+    padding:10px;
+    text-align: justify;
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgb(19, 33, 33);
 }
 
 .bg {
@@ -53,9 +110,9 @@ section {
     transform: translateX(-100%);
 }
 
-
 .show {
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
 }
+
