@@ -21,7 +21,7 @@ const loadText = document.querySelector('.loading-text')
             Bar.style.opacity = scale(load, 0, 100, 1, 0)
             loadBar.style.width = `${scale(load, 0, 100, 0, 400)}px`
 
-<<<<<<< Updated upstream
+
             bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
         }
 
@@ -29,9 +29,8 @@ const loadText = document.querySelector('.loading-text')
         function scale(number, inMin, inMax, outMin, outMax) {
             return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
         }
-=======
     bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
-}
+
 
 https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
 function scale(number, inMin, inMax, outMin, outMax) {
@@ -66,4 +65,3 @@ hiddenElements.forEach((el) => observer.observe(el))
 // checkbox.addEventListener('change',function(){
 //     document.getElementsByClassName('navbar').setAttributes("style",) = "black"
 // })
->>>>>>> Stashed changes
