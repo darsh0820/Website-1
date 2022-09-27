@@ -178,7 +178,7 @@ div .wave.wave2{
     animation: animate2 15s linear infinite;
     opacity: 0.6;
     animation-delay: calc(var(--scroll)*-15s);
-    animation-play-state: paused;
+    /* animation-play-state: paused; */
     bottom: 15px;
 }
 @keyframes animate2{
@@ -218,7 +218,7 @@ div .wave.wave3{
 
 .loading-text {
     font-size: 30px;
-    color: rgb(170, 170, 170);
+    color: white;
     text-align: right;
     margin-top: 3px;
 }
@@ -232,7 +232,7 @@ div .wave.wave3{
 
 .loading-bar {
     height: 20px;
-    background-color: rgb(170, 170, 170);
+    background-color:white;
     float: left;
 }
 

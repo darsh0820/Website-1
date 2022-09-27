@@ -19,7 +19,7 @@ const loadText = document.querySelector('.loading-text')
             loadText.style.opacity = scale(load, 0, 100, 1, 0)
 
             Bar.style.opacity = scale(load, 0, 100, 1, 0)
-            loadBar.style.width = `${scale(load, 0, 100, 0, 400)}px`
+            loadBar.style.width = `${scale(load, 0, 100, 0, 200)}px`
 
 
             bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
